@@ -8,14 +8,14 @@ def mark(*args):
     # Take 2 arguments
     f = len(sys.argv)
 
-    if f <= 2:
-        print('Usage: ./markdown2html.py README.md README.html', file=sys.stderr)
-        exit(1)
+    if f < 3:
+        print("Usage: ./markdown2html.py README.md README.html", file=sys.stderr)
+        exit (1)
     try:
         file = open(sys.argv[1])
         file.close()
     except:
-        print('Missing', sys.argv[1], file=sys.stderr)
+        print("Missing", sys.argv[1], file=sys.stderr)
         exit(1)
     if __name__ == '__main__':
         mark(sys.argv)
