@@ -17,5 +17,5 @@ def mark(*args):
     except:
         print("Missing", sys.argv[1], file=sys.stderr)
         exit(1)
-    if __name__ == '__main__':
-        mark(sys.argv)
+if __name__ == '__main__':
+    mark(sys.argv)
