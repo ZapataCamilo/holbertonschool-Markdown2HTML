@@ -5,6 +5,7 @@ Second argument is the output file name, makes no change'''
 import sys
 import markdown
 
+# Convert Markdown to html
 def mark(*args):
     # Take 2 strings arguments 
     f = len(sys.argv)
