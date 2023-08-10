@@ -19,6 +19,7 @@ def mark(*args):
         file.close()
         with open(sys.argv[2], 'w') as f:
             f.write(copy)
+        f.close()
     except:
         print("Missing", sys.argv[1], file=sys.stderr)
         exit(1)
